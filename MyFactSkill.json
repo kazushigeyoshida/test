@@ -1,0 +1,36 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "吉田の豆知識",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactsIntent",
+                    "slots": [],
+                    "samples": [
+                        "豆知識を教えて",
+                        "豆知識",
+                        "雑学を教えて",
+                        "雑学",
+                        "何か教えて",
+                        "何か",
+                        "他の豆知識",
+                        "他の雑学"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
