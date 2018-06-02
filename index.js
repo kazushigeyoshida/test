@@ -45,9 +45,9 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewFactIntent');
+        this.emit('POISearchIntent');
     },
-    'GetNewFactIntent': function () {
+    'POISearchIntent': function () {
         var factArr = data;
         var factIndex = Math.floor(Math.random() * factArr.length);
         var randomFact = factArr[factIndex];

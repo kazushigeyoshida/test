@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "吉田の豆知識",
+            "invocationName": "ナビ",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -16,21 +16,90 @@
                     "samples": []
                 },
                 {
-                    "name": "GetNewFactsIntent",
-                    "slots": [],
+                    "name": "POISearchIntent",
+                    "slots": [
+                        {
+                            "name": "fromPIOtype",
+                            "type": "POItype"
+                        },
+                        {
+                            "name": "fromSearchtype",
+                            "type": "Searchtype"
+                        }
+                    ],
                     "samples": [
-                        "豆知識を教えて",
-                        "豆知識",
-                        "雑学を教えて",
-                        "雑学",
-                        "何か教えて",
-                        "何か",
-                        "他の豆知識",
-                        "他の雑学"
+                        "検索",
+                        "検索する",
+                        "検索して",
+                        "見つける",
+                        "見つけて",
+                        "探して",
+                        "探す",
+                        "{fromPIOtype} ",
+                        "{fromPIOtype} 検索",
+                        "{fromPIOtype} を検索",
+                        "{fromPIOtype} を探して",
+                        "{fromSearchtype} から検索",
+                        "{fromSearchtype} を検索",
+                        "{fromSearchtype} で検索",
+                        "{fromSearchtype} から {fromPIOtype} ",
+                        "{fromSearchtype} の {fromPIOtype} 検索",
+                        "{fromSearchtype} の {fromPIOtype} を検索",
+                        "{fromSearchtype} から {fromPIOtype} を検索",
+                        "{fromSearchtype} の {fromPIOtype} を探して",
+                        "{fromSearchtype} から {fromPIOtype} を探して",
+                        "教えて"
                     ]
                 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "POItype",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "駐車場",
+                                "synonyms": [
+                                    "パーキング"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "給油所",
+                                "synonyms": [
+                                    "ガソリンスタンド",
+                                    "スタンド"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Searchtype",
+                    "values": [
+                        {
+                            "id": "",
+                            "name": {
+                                "value": "近く",
+                                "synonyms": [
+                                    "近所",
+                                    "付近"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "",
+                            "name": {
+                                "value": "通り道",
+                                "synonyms": [
+                                    "ルート"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
