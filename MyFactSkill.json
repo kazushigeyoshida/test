@@ -57,6 +57,7 @@
                     "name": "POItype",
                     "values": [
                         {
+                            "id": "PARKING",
                             "name": {
                                 "value": "駐車場",
                                 "synonyms": [
@@ -65,6 +66,7 @@
                             }
                         },
                         {
+                            "id": "GASSTATION",
                             "name": {
                                 "value": "給油所",
                                 "synonyms": [
@@ -79,7 +81,6 @@
                     "name": "Searchtype",
                     "values": [
                         {
-                            "id": "",
                             "name": {
                                 "value": "近く",
                                 "synonyms": [
@@ -89,7 +90,6 @@
                             }
                         },
                         {
-                            "id": "",
                             "name": {
                                 "value": "通り道",
                                 "synonyms": [
